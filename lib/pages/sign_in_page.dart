@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_instagram/pages/header_page.dart';
 import 'package:flutter_instagram/pages/sign_up_page.dart';
 import 'package:flutter_instagram/widget_catalogs/glassmorphism_widget.dart';
 
@@ -14,6 +15,10 @@ class _SignInPageState extends State<SignInPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
+
+  Future <void> openHeaderPage() async {
+    Navigator.pushReplacementNamed(context, HeaderPage.id);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +106,7 @@ class _SignInPageState extends State<SignInPage> {
                       start: 0.0,
                       end: 0.0,
                       child: MaterialButton(
-                        onPressed: (){},
+                        onPressed: openHeaderPage,
                         minWidth: MediaQuery.of(context).size.width,
                         child: const Text("Sign In"),
                       ),

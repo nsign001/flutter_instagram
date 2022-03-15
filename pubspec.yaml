@@ -12,7 +12,8 @@ dependencies:
   flutter_blurhash: ^0.6.4
   cupertino_icons: ^1.0.2
   simple_animations: ^4.0.1
-  glassmorphism: ^2.0.1
+  awesome_icons: ^1.1.0
+  image_picker: ^0.8.4+11
 
 dev_dependencies:
   flutter_test:
