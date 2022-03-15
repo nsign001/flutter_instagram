@@ -17,12 +17,11 @@ class HeaderPage extends StatefulWidget {
 
 class _HeaderPageState extends State<HeaderPage> {
   final PageController _pageController = PageController();
-  int _currentTap = 0;
+  late int _currentTap = 2;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
       body: PageView(
         physics: const NeverScrollableScrollPhysics(),
         controller: _pageController,

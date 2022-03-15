@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class LikesPage extends StatefulWidget {
   const LikesPage({Key? key}) : super(key: key);
 
-  static const String id = 'header_page';
+  static const String id = 'likes_page';
   @override
   _LikesPageState createState() => _LikesPageState();
 }

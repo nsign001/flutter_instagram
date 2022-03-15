@@ -17,11 +17,6 @@ class _SignUpPageState extends State<SignUpPage> {
   TextEditingController passwordController = TextEditingController();
   TextEditingController confirmPasswordController = TextEditingController();
 
-
-  Future <void> fromSignUp() async {
-    Navigator.pushReplacementNamed(context, HeaderPage.id);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -154,7 +149,9 @@ class _SignUpPageState extends State<SignUpPage> {
                       start: 0.0,
                       end: 0.0,
                       child: MaterialButton(
-                        onPressed: fromSignUp,
+                        onPressed: (){
+                          Navigator.pushReplacementNamed(context, HeaderPage.id);
+                        },
                         minWidth: MediaQuery.of(context).size.width,
                         child: const Text("Sign Up"),
                       ),

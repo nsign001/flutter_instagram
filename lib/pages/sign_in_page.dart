@@ -15,11 +15,6 @@ class _SignInPageState extends State<SignInPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
-
-  Future <void> openHeaderPage() async {
-    Navigator.pushReplacementNamed(context, HeaderPage.id);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -106,7 +101,9 @@ class _SignInPageState extends State<SignInPage> {
                       start: 0.0,
                       end: 0.0,
                       child: MaterialButton(
-                        onPressed: openHeaderPage,
+                        onPressed: (){
+                          Navigator.pushReplacementNamed(context, HeaderPage.id);
+                        },
                         minWidth: MediaQuery.of(context).size.width,
                         child: const Text("Sign In"),
                       ),

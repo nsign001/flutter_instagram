@@ -9,7 +9,7 @@ import 'package:image_picker/image_picker.dart';
 class UploadPage extends StatefulWidget {
   const UploadPage({Key? key}) : super(key: key);
 
-  static const String id = 'header_page';
+  static const String id = 'upload_page';
   @override
   _UploadPageState createState() => _UploadPageState();
 }
